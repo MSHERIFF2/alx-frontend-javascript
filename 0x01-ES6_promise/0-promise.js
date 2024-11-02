@@ -1,19 +1,8 @@
 function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
-    // Your API call or logic here
-    const response = { /* your response data */ };
-    if (response) {
-      resolve(response);
-    } else {
-      reject("Error: No response from API");
-    }
+    setTimeout(() => {
+      const response = {data: "Hello From API"}
+      resolve(response)
+    }, 2000)
   });
 }
-
-// getResponseFromAPI()
-//   .then(response => {
-//     console.log(response);
-//   })
-//   .catch(error => {
-//     console.error(error);
-//   });
