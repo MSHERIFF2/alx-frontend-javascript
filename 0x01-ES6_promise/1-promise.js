@@ -4,7 +4,7 @@ export default function getFullResponseFromAPI(success) {
       const myObject = { status: 200, body: 'Success' };
       resolve(myObject);
     } else {
-      console.log('<rejected> Error: The fake API is not working currently');
+      console.log('The fake API is not working currently');
     }
   });
 }
